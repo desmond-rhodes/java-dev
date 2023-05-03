@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 docker build -t java-dev .
 docker run -itd -v/mnt:/mnt -v/home:/home --name java-dev java-dev
-alias java-dev='docker exec -it -u$(id -u):$(id -g) -w$PWD java-dev'
+alias java-dev='docker exec -it -u$(id -u):$(id -g) -w"$PWD" java-dev'
